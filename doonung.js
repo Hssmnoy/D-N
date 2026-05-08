@@ -103,6 +103,40 @@ function safeFilename(name) {
   return name.replace(/[<>:"/\\|?*]/g, "_");
 }
 
+function generateIndex(categories) {
+  const baseRaw =
+    "https://raw.githubusercontent.com/Hssmnoy/D-N/main/data/";
+
+  const banner =
+    "https://s3.ดูบอลดูหนัง.com/global/banners/block-8a87dca3-0b6c-4b84-aad7-d2f392aef5da.jpeg";
+
+  const index = {
+    name: "Doo-Nang",
+    author: `อัพเดตล่าสุด ${DATE}`,
+    image: banner,
+    url: "https://www.doo-nang.com/",
+    groups: []
+  };
+
+  categories.forEach(category => {
+    index.groups.push({
+      name: category.name,
+      image: category.image || banner,
+      url: `${baseRaw}${encodeURIComponent(
+        safeFilename(category.name)
+      )}.json`
+    });
+  });
+
+  fs.writeFileSync(
+    "data/index.json",
+    JSON.stringify(index, null, 2)
+  );
+
+  console.log("📦 data/index.json created");
+}
+
+
 async function main() {
   const menus = (await getMenus()).filter(
   menu =>
@@ -111,6 +145,7 @@ async function main() {
 );
 
   let m3u = "#EXTM3U\n";
+  let savedCategories = [];
 
   for (const menu of menus) {
     console.log("MENU:", menu.title);
@@ -163,13 +198,13 @@ async function main() {
         filename,
         JSON.stringify(category, null, 2)
       );
-
+      savedCategories.push(category);
       console.log("SAVED:", filename);
     }
   }
 
   fs.writeFileSync("playlist_doonung.m3u", m3u);
-
+  generateIndex(savedCategories);
   console.log("DONE");
 }
 
