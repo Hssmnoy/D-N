@@ -113,7 +113,7 @@ function safeFilename(name) {
 
 function generateIndex(categories) {
   const baseRaw =
-    "https://raw.githubusercontent.com/Hssmnoy/D-N/main/data/";
+    "https://raw.githubusercontent.com/Hssmnoy/D-N/main/wiseplay/";
 
   const banner =
     "https://s3.ดูบอลดูหนัง.com/global/banners/block-8a87dca3-0b6c-4b84-aad7-d2f392aef5da.jpeg";
