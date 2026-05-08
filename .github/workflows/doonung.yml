@@ -32,7 +32,7 @@ jobs:
           git config user.name "github-actions"
           git config user.email "actions@github.com"
 
-          git add data/*.json playlist_doonung.m3u
+          git add data/*.json wiseplay/*.json playlist_doonung.m3u
 
           if git diff --cached --quiet; then
             echo "No changes"
