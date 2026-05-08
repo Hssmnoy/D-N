@@ -95,8 +95,16 @@ async function getMovies(menu, skip) {
   return fetchGraphQL(query, variables);
 }
 
-function posterToStream(url) {
-  return url.replace("/poster.jpg", "/videos/1080p.m3u8");
+function posterToStream(posterUrl) {
+  const match = posterUrl.match(
+    /duckduckcdn\.com\/([^/]+)\//
+  );
+
+  if (!match) return "";
+
+  const id = match[1];
+
+  return `https://api.doo-nang.com/video/${id}/playlist.m3u8`;
 }
 
 function safeFilename(name) {
