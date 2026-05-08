@@ -2,7 +2,7 @@ const fs = require("fs");
 
 const API = "https://api.doo-nang.com/graphql";
 const TAKE = 60;
-
+const WISEPLAY_DIR = "wiseplay";
 const now = new Date(
   new Date().toLocaleString("en-US", { timeZone: "Asia/Bangkok" })
 );
@@ -144,6 +144,43 @@ function generateIndex(categories) {
   console.log("📦 data/index.json created");
 }
 
+function buildWiseplay(category) {
+
+  const today = `อัพเดตล่าสุด ${DATE}`;
+
+  const output = {
+    name: category.name,
+    author: today,
+    image: category.image,
+    url: category.url,
+    groups: []
+  };
+
+  for (const movie of category.groups) {
+
+    output.groups.push({
+      name: movie.name,
+      image: movie.image,
+      info: movie.info,
+      stations: [
+        {
+          name: movie.name,
+          image: movie.image,
+          url: movie.url,
+          referer: movie.referer
+        }
+      ]
+    });
+
+  }
+
+  const file = `${WISEPLAY_DIR}/${safeFilename(category.name)}.json`;
+
+  fs.writeFileSync(file, JSON.stringify(output, null, 2));
+
+  console.log("📺 Wiseplay saved:", file);
+}
+
 
 async function main() {
   const menus = (await getMenus()).filter(
@@ -199,21 +236,36 @@ async function main() {
       skip += TAKE;
     }
 
-    if (category.groups.length) {
-      const filename = `data/${safeFilename(menu.title)}.json`;
+  // 🔥 ต้องสร้างก่อนใช้งาน buildWiseplay
+if (!fs.existsSync(WISEPLAY_DIR)) {
+  fs.mkdirSync(WISEPLAY_DIR);
+}
 
-      fs.writeFileSync(
-        filename,
-        JSON.stringify(category, null, 2)
-      );
-      savedCategories.push(category);
-      console.log("SAVED:", filename);
-    }
-  }
+if (category.groups.length) {
+  const filename = `data/${safeFilename(menu.title)}.json`;
 
-  fs.writeFileSync("playlist_doonung.m3u", m3u);
-  generateIndex(savedCategories);
-  console.log("DONE");
+  fs.writeFileSync(
+    filename,
+    JSON.stringify(category, null, 2)
+  );
+
+  // 🔥 build หลังจากมี folder แล้ว
+  buildWiseplay(category);
+
+  savedCategories.push(category);
+
+  console.log("SAVED:", filename);
+}
+
+// =========================
+
+// m3u เขียนก่อนจบ
+fs.writeFileSync("playlist_doonung.m3u", m3u);
+
+// index ใช้หลัง build ทั้งหมด
+generateIndex(savedCategories);
+
+console.log("DONE");
 }
 
 main().catch(console.error);
