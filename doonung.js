@@ -236,36 +236,33 @@ async function main() {
       skip += TAKE;
     }
 
-  // 🔥 ต้องสร้างก่อนใช้งาน buildWiseplay
+// 🔥 สร้าง folder ก่อน (ถูกต้องแล้ว)
 if (!fs.existsSync(WISEPLAY_DIR)) {
   fs.mkdirSync(WISEPLAY_DIR);
 }
 
 if (category.groups.length) {
+
   const filename = `data/${safeFilename(menu.title)}.json`;
 
+  // 1️⃣ บันทึกไฟล์เก่า (JSON เดิม)
   fs.writeFileSync(
     filename,
     JSON.stringify(category, null, 2)
   );
 
-  // 🔥 build หลังจากมี folder แล้ว
-  buildWiseplay(category);
+  // 2️⃣ 🔥 แปลงเป็น Wiseplay (ต้องใช้ object เดียวกัน)
+  buildWiseplay({
+    name: category.name,
+    image: category.image,
+    url: category.url,
+    groups: category.groups
+  });
 
+  // 3️⃣ เก็บไว้ทำ index
   savedCategories.push(category);
 
   console.log("SAVED:", filename);
-}
-
-// =========================
-
-// m3u เขียนก่อนจบ
-fs.writeFileSync("playlist_doonung.m3u", m3u);
-
-// index ใช้หลัง build ทั้งหมด
-generateIndex(savedCategories);
-
-console.log("DONE");
 }
 
 main().catch(console.error);
