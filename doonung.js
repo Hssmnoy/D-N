@@ -264,5 +264,5 @@ if (category.groups.length) {
 
   console.log("SAVED:", filename);
 }
-
+}
 main().catch(console.error);
