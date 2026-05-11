@@ -1,9 +1,23 @@
 {
   "name": "ภาพยนตร์ การ์ตูน",
-  "author": "อัพเดตล่าสุด 11/5/2569",
+  "author": "อัพเดตล่าสุด 12/5/2569",
   "image": "https://s3.ดูบอลดูหนัง.com/global/banners/block-8a87dca3-0b6c-4b84-aad7-d2f392aef5da.jpeg",
   "url": "https://www.doo-nang.com",
   "groups": [
+    {
+      "name": "เดอะ ซูเปอร์ มาริโอ กาแล็คซี่ มูฟวี่",
+      "info": "IMDb -",
+      "image": "https://statics-02.duckduckcdn.com/ffc89cdc-10c5-57b4-b8b7-10665f0ca044/poster.jpg",
+      "url": "https://api.doo-nang.com/video/ffc89cdc-10c5-57b4-b8b7-10665f0ca044/playlist.m3u8",
+      "referer": "https://www.doo-nang.com"
+    },
+    {
+      "name": "Those Science Freaks",
+      "info": "IMDb -",
+      "image": "https://statics-01.duckduckcdn.com/81590a86-0509-5d8c-a5b1-abbde3382ea6/poster.jpg",
+      "url": "https://api.doo-nang.com/video/81590a86-0509-5d8c-a5b1-abbde3382ea6/playlist.m3u8",
+      "referer": "https://www.doo-nang.com"
+    },
     {
       "name": "Bodacious Space Pirates: Abyss of Hyperspace",
       "info": "IMDb 6.3",

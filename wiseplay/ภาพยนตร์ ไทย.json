@@ -1,9 +1,22 @@
 {
   "name": "ภาพยนตร์ ไทย",
-  "author": "อัพเดตล่าสุด 11/5/2569",
+  "author": "อัพเดตล่าสุด 12/5/2569",
   "image": "https://s3.ดูบอลดูหนัง.com/global/banners/block-8a87dca3-0b6c-4b84-aad7-d2f392aef5da.jpeg",
   "url": "https://www.doo-nang.com",
   "groups": [
+    {
+      "name": "เลือดรัก นักฆ่า",
+      "image": "https://statics-02.duckduckcdn.com/ef74aef3-dead-54cf-a7ad-8651fc4e81b2/poster.jpg",
+      "info": "IMDb 5.7",
+      "stations": [
+        {
+          "name": "เลือดรัก นักฆ่า",
+          "image": "https://statics-02.duckduckcdn.com/ef74aef3-dead-54cf-a7ad-8651fc4e81b2/poster.jpg",
+          "url": "https://api.doo-nang.com/video/ef74aef3-dead-54cf-a7ad-8651fc4e81b2/playlist.m3u8",
+          "referer": "https://www.doo-nang.com"
+        }
+      ]
+    },
     {
       "name": "หมู่บ้านโคกะโหลก",
       "image": "https://statics-01.duckduckcdn.com/70836193-feec-5ae8-9ebf-b9f036ffb78b/poster.jpg",

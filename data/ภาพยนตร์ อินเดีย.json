@@ -1,9 +1,37 @@
 {
   "name": "ภาพยนตร์ อินเดีย",
-  "author": "อัพเดตล่าสุด 11/5/2569",
+  "author": "อัพเดตล่าสุด 12/5/2569",
   "image": "https://s3.ดูบอลดูหนัง.com/global/banners/block-8a87dca3-0b6c-4b84-aad7-d2f392aef5da.jpeg",
   "url": "https://www.doo-nang.com",
   "groups": [
+    {
+      "name": "เป้าหมายนี้คือเธอ",
+      "info": "IMDb 6.7",
+      "image": "https://statics-02.duckduckcdn.com/59a0a9bf-800b-5409-805e-421a61e6096b/poster.jpg",
+      "url": "https://api.doo-nang.com/video/59a0a9bf-800b-5409-805e-421a61e6096b/playlist.m3u8",
+      "referer": "https://www.doo-nang.com"
+    },
+    {
+      "name": "เป้าหมายนี้คือเธอ 2",
+      "info": "IMDb 7.1",
+      "image": "https://statics-02.duckduckcdn.com/c7b777b1-94d0-5853-b970-f14eb71c86d6/poster.jpg",
+      "url": "https://api.doo-nang.com/video/c7b777b1-94d0-5853-b970-f14eb71c86d6/playlist.m3u8",
+      "referer": "https://www.doo-nang.com"
+    },
+    {
+      "name": "จัล เมรา ปุตต์",
+      "info": "IMDb 7.5",
+      "image": "https://statics-02.duckduckcdn.com/4f1bdb9c-6d0c-5e06-bf97-f6d2cd5997c1/poster.jpg",
+      "url": "https://api.doo-nang.com/video/4f1bdb9c-6d0c-5e06-bf97-f6d2cd5997c1/playlist.m3u8",
+      "referer": "https://www.doo-nang.com"
+    },
+    {
+      "name": "ไบเกอร์: ซิ่งเดือดสายเลือดนักบิด",
+      "info": "IMDb 6.5",
+      "image": "https://statics-02.duckduckcdn.com/03cf5404-32bb-5e17-8149-60b2f8be6ddc/poster.jpg",
+      "url": "https://api.doo-nang.com/video/03cf5404-32bb-5e17-8149-60b2f8be6ddc/playlist.m3u8",
+      "referer": "https://www.doo-nang.com"
+    },
     {
       "name": "สเปเชี่ยล 26",
       "info": "IMDb 8",

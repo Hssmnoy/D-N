@@ -1,9 +1,16 @@
 {
   "name": "หนังประวัติศาสตร์",
-  "author": "อัพเดตล่าสุด 11/5/2569",
+  "author": "อัพเดตล่าสุด 12/5/2569",
   "image": "https://s3.ดูบอลดูหนัง.com/global/banners/block-8a87dca3-0b6c-4b84-aad7-d2f392aef5da.jpeg",
   "url": "https://www.doo-nang.com",
   "groups": [
+    {
+      "name": "The Battle of Okinawa",
+      "info": "IMDb 6.9",
+      "image": "https://statics-02.duckduckcdn.com/5519ffe6-a815-532c-9146-5177b8dd3518/poster.jpg",
+      "url": "https://api.doo-nang.com/video/5519ffe6-a815-532c-9146-5177b8dd3518/playlist.m3u8",
+      "referer": "https://www.doo-nang.com"
+    },
     {
       "name": "A Night to Remember",
       "info": "IMDb 7.9",
