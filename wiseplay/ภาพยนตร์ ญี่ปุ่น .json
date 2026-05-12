@@ -1,9 +1,22 @@
 {
   "name": "ภาพยนตร์ ญี่ปุ่น ",
-  "author": "อัพเดตล่าสุด 12/5/2569",
+  "author": "อัพเดตล่าสุด 13/5/2569",
   "image": "https://s3.ดูบอลดูหนัง.com/global/banners/block-8a87dca3-0b6c-4b84-aad7-d2f392aef5da.jpeg",
   "url": "https://www.doo-nang.com",
   "groups": [
+    {
+      "name": "แฟรงเก้นสไตล์ ปะทะ บาราก้อน",
+      "image": "https://statics-01.duckduckcdn.com/38f0e1c0-1c90-5a51-aa7a-c475a778cbef/poster.jpg",
+      "info": "IMDb 5.5",
+      "stations": [
+        {
+          "name": "แฟรงเก้นสไตล์ ปะทะ บาราก้อน",
+          "image": "https://statics-01.duckduckcdn.com/38f0e1c0-1c90-5a51-aa7a-c475a778cbef/poster.jpg",
+          "url": "https://api.doo-nang.com/video/38f0e1c0-1c90-5a51-aa7a-c475a778cbef/playlist.m3u8",
+          "referer": "https://www.doo-nang.com"
+        }
+      ]
+    },
     {
       "name": "Those Science Freaks",
       "image": "https://statics-01.duckduckcdn.com/81590a86-0509-5d8c-a5b1-abbde3382ea6/poster.jpg",
