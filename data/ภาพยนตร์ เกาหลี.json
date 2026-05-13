@@ -1,6 +1,6 @@
 {
   "name": "ภาพยนตร์ เกาหลี",
-  "author": "อัพเดตล่าสุด 13/5/2569",
+  "author": "อัพเดตล่าสุด 14/5/2569",
   "image": "https://s3.ดูบอลดูหนัง.com/global/banners/block-8a87dca3-0b6c-4b84-aad7-d2f392aef5da.jpeg",
   "url": "https://www.doo-nang.com",
   "groups": [
@@ -215,13 +215,6 @@
       "referer": "https://www.doo-nang.com"
     },
     {
-      "name": "ไล่มันกลับลงหลุม",
-      "info": "IMDb 5.2",
-      "image": "https://statics-01.duckduckcdn.com/04ae1dbb-6621-5f8b-a950-84d39cc43f8e/poster.jpg",
-      "url": "https://api.doo-nang.com/video/04ae1dbb-6621-5f8b-a950-84d39cc43f8e/playlist.m3u8",
-      "referer": "https://www.doo-nang.com"
-    },
-    {
       "name": "พลิกน่านฟ้าผ่าวิกฤติ",
       "info": "IMDb 6.5",
       "image": "https://statics-01.duckduckcdn.com/599f7c7f-a8b7-5b32-994b-364047cfc8f1/poster.jpg",
@@ -233,13 +226,6 @@
       "info": "IMDb 6.4",
       "image": "https://statics-01.duckduckcdn.com/e6699443-723a-5aeb-8c12-9ef5fe24025a/poster.jpg",
       "url": "https://api.doo-nang.com/video/e6699443-723a-5aeb-8c12-9ef5fe24025a/playlist.m3u8",
-      "referer": "https://www.doo-nang.com"
-    },
-    {
-      "name": "The Ghost Game",
-      "info": "IMDb 6",
-      "image": "https://statics-02.duckduckcdn.com/683ecdf1-c805-50fd-91aa-725c75f54d38/poster.jpg",
-      "url": "https://api.doo-nang.com/video/683ecdf1-c805-50fd-91aa-725c75f54d38/playlist.m3u8",
       "referer": "https://www.doo-nang.com"
     },
     {
